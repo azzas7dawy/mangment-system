@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link rel="stylesheet" href="CSS/stty.CSS">
+   
+</head>
+<body>
+   <div  class="crad">
+<div class="head">
+    <h2>CRADS</h2>
+    <p class="undhead">Project Manage System </p> 
+</div>
+<div class="input">
+    <input type="text" placeholder="title" id="title">
+    <div class="price">
+   <input onkeyup="getTotle()" type="number" placeholder="price" id="price">     
+   <input onkeyup="getTotle()" type="number" placeholder="taxes" id="taxes">   
+   <input onkeyup="getTotle()" type="number" placeholder="ads" id="ads">   
+   <input onkeyup="getTotle()" type="number" placeholder="discount" id="discount">   
+   <small id="totle"></small>
+    </div>
+    <input type="number" placeholder="count" id="count">
+    <input type="text" placeholder="category" id="category">
+    <button id="submit">Create</button>
+</div>
+<div class="output">
+    <div class="searchBlock">
+    <input onkeyup=" searchDa(this.value)" type="text" id="search" placeholder="Search">
+    <div class="btsearch" >
+        <button onclick=" searchdata(this.id)" id="searchbyTit">Search By Title</button>
+        <button onclick=" searchdata(this.id)" id="searchbycat">Search By Category</button>
+    </div>
+    </div>
+</div>
+<div id="deletAll"></div>
+ <table>
+<tr>
+    <td>id</td>
+    <td>title</td>
+    <td>price</td>
+    <td>taxes</td>
+    <td>ads</td>
+    <td>discount</td>
+    <td>totle</td>
+    <td>category</td>
+    <td>updata </td>
+    <td>delet </td>
+   
+</tr>
+ <tbody id="tbody">
+   <!-- <tr>
+      <td>  <button id="updata">Updata</button> </td>  
+      <td> <button id="delet">Delet</button></td>  
+    </tr>  -->
+ </tbody>
+
+ </table>
+
+
+   </div>
+
+<script src="action.js"></script>
+</body>
+</html>
